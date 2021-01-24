@@ -1,1 +1,1 @@
-web: C:/Python38/PythonFlask - Itamar/Flask Web.py
+web: C:\Users\Shahar Levy\AppData\Local\Programs\Python\Python38\python.exe
