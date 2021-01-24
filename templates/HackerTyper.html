@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hacker Typer</title>
+	<link rel="stylesheet" type="text/css" href="
+	https://fonts.googlepis.com/css?family=Oswald">
+	<style type="text/css">
+		body {
+			background: #000;
+			margin: 0;
+			padding: 0;
+		}
+		* {
+			font-family: 'Oswald', sans-serif;
+		}
+		#hackertyper {
+			width: 100%;
+		}
+		#hackertyper span {
+			color: #0F0;
+			width: 10px;
+			text-align: center;
+			display: block;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div id="hackertyper"></div>
+<script type="text/javascript">
+	var x = 0;
+	var hackertyper = document.getElementById("hackertyper")
+		;
+	var chars = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
+	var charLength = chars.length;
+	window.onload = function() {
+	    the_i = setInterval(function(){
+	    	var el = document.createElement('span');
+	    	var rand = Math.floor(Math.random() *
+	    		charLength);
+	    	var chartext = document.createTextNode(chars
+	    		[x++]);
+	    	if(x >= charLength) {
+	        	x = 0;
+	    	}else {
+	        	hackertyper.appendChild(el).appendChild(
+	        	chartext);
+	    	}
+	    },0);
+	}
+</script>
+</body>
+</html>
